@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#677699">
+    <meta name="description" content="age calculator">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--======= main css styling  ========-->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-32x32.png">
+
+    <title>ayush.Age.Calculator</title>
+</head>
+
+<body>
+    <p class="copy">Number Copied Successfully!</p>
+    <header>
+        <h4>Age Calculator By Ayush</h4>
+        <div class="click">
+            <h2></h2>
+        </div>
+    </header>
+    <div class="wrap animation">
+        <ul>
+            <li>
+                <details>
+                    <summary>About</summary>
+                    <p class="mb5px animation">A simple age Calculator that shows you the age & upcoming birthday Days.
+                    </p>
+                    <p class="mb5px animation">Created in june 2023.</p>
+                    <p class="mb5px animation">Design & Developed By - <i>Ayush Nagar</i>.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Contact Developer</summary>
+                    <div class="detail-flex animation">
+                        <a href="mailto:nagarayush570@gmail.com">
+                            <img src="gmail.png" alt="gmail-logo">
+                        </a>
+                        <a href="mailto:nagarayush570@gmail.com" class="underline animation">nagarayush570@gmail.com</a>
+                    </div>
+                    <div class="detail-flex">
+                        <img src="viber.png" alt="call logo" style="margin-left: 5px;" class="number">
+                        <p class="pdleft number animation">9754742477</p>
+                    </div>
+                    <div class="detail-flex">
+                        <a href="https://wa.me/919754742477">
+                            <img src="whatsapp.png" alt="whatsapp logo">
+                        </a>
+                        <a href="https://wa.me/919754742477" class="animation">9754742477</a>
+                    </div>
+                    <div class="detail-flex">
+                        <a href="https://linkedin.com/in/ayush-nagar-front-end">
+                            <img src="linkedin.png" alt="linkedin logo">
+                        </a>
+                        <a href="https://linkedin.com/in/ayush-nagar-front-end" class="animation">Linkedin</a>
+                    </div>
+                    <div class="detail-flex">
+                        <a href="https://ayushnagar-portfolio.netlify.app">
+                            <img src="world-wide-black-symbol.png" alt="img">
+                        </a>
+                        <a href="https://ayushnagar-portfolio.netlify.app">Developer Portfolio</a>
+                    </div>
+                </details>
+            </li>
+            <li>Design & Developed by <i>Ayush Nagar</i>.</li>
+            <li>Open To Work -</li>
+        </ul>
+    </div>
+    <div class="container">
+        <form action="" onsubmit="return calculator()">
+            <h3 class="flex animation">
+                <span>Date of Birth</span>
+                <span id="dobday">day</span>
+            </h3>
+            <input type="date" id="dob" placeholder="hello">
+
+            <h3 class="flex animation">
+                <span>Today's Date</span>
+                <span id="todayday">day</span>
+            </h3>
+            <input type="date" id="tilldate">
+            <div class="div animation">
+                <input type="submit" value="CALCULATE">
+                <input type="reset" value="CLEAR" onclick="doclear()">
+            </div>
+        </form>
+        <p class="error"></p>
+        <p class="heading animation">Age</p>
+        <h3 class="result">
+            <div class="age animation">
+                <p>Years</p>
+                <p id="years">0</p>
+            </div>
+            <div class="age animation">
+                <p>Months</p>
+                <p id="months">0</p>
+            </div>
+            <div class="age animation">
+                <p>Days</p>
+                <p id="days">0</p>
+            </div>
+        </h3>
+        <p class="heading animation">Next Birthday</p>
+        <h3 class="result animation">
+            <div class="age animation">
+                <p>Months</p>
+                <p id="nextmonths">0</p>
+            </div>
+            <div class="age animation">
+                <p>Days</p>
+                <p id="nextdays">0</p>
+            </div>
+        </h3>
+    </div>
+    <div class="radial animation"></div>
+
+    <!--============ gsap cdn ============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--===== main script  =====-->
+    <script src="script.js"></script>
+</body>
+
+</html>
